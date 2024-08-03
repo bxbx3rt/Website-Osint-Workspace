@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href= "icono.ico" type="image/x-icon">
+    <title>OSINT Framework</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menú lateral -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <div class="logo">
+            <a href="web1.html" onclick="showContent('inicio')">
+                <img src="OSINT2.jpeg" alt="Logo" />
+            </a>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="javascript:void(0)" onclick="showContent('username')">Username</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('email')">Email</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('ip')">IP</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('imagen-video')">Imagen/Video</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('rrss')">RRSS</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('pse')">PSE</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('metadatos')">Metadatos</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('foros-blogs')">Foros/Blogs</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('acerca-de')">Acerca de</a></li>
+
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <span class="menu-icon" onclick="openSidebar()">☰</span>
+        <main>
+            <div id="content">
+                <!-- Contenido dinámico cargado aquí -->
+                <h1>Bienvenido a OSINT Workspace.</h1>
+                <p>Selecciona una opción del menú lateral para ver el contenido.</p>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 OSINT WorkSpace. Todos los derechos reservados.</p>
+    </footer>
+    <script src="javascript.js"></script>
+</body>
+</html>
